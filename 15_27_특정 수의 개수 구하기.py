@@ -33,5 +33,6 @@ print(cnt if cnt!=0 else -1)
 import bisect
 n, x =map(int,input().split())
 arr = list(map(int,input().split()))
-print(bisect.bisect_right(arr,x)-bisect.bisect_left(arr,x))
+ans = bisect.bisect_right(arr,x)-bisect.bisect_left(arr,x) 
+print(ans if ans != 0 else 0)
 
