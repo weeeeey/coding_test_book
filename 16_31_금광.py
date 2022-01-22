@@ -14,6 +14,15 @@ arr = list(map(int,input().split()))
 gr = [[0]*m for i in range(n)]
 for i in range(n*m):
   gr[i//m][int(i%m)] = arr[i]
+'''
+1차원 리스트를 2차원으로 쉽게 변환하기
+gr = []
+index = 0
+for i in range(n):
+  gr.append(arr[index:index+m])
+  index+=m
+'''
+  
 gr.append([0]*m)
 gr.insert(0,[0]*m)
 
